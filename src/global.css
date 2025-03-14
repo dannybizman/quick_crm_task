@@ -1,0 +1,77 @@
+/* @import '~bootstrap/dist/css/bootstrap.css'; */
+/* @import 'bootstrap-icons/font/bootstrap-icons.css'; */
+
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 100%; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #15dee5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--themeRed);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+:root{
+  --themeRed: #000000;
+  --themeBlack: #2e2e2e;
+  --pink: #15dee5;
+  --gray: #828282;
+  --shadow: -4px 12px 20px -2px rgba(0, 0, 0, 0.19);
+  --background-color:  linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 30rem);
+  --cartBack : rgba(255, 255, 255, 0.38);
+}
+
+/* Remove default link underline */
+a {
+  text-decoration: none;
+}
+
+
+/* Reset image max-width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+

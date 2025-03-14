@@ -1,0 +1,111 @@
+/* Full-page layout */
+.login-container {
+   display: flex;
+   height: 100vh;
+   width: 100vw;
+ }
+ 
+ /* Left Background Section */
+ .login-bg {
+   flex: 1;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ 
+ /* Right Form Section */
+ .login-form-container {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   padding: 20px;
+ }
+ 
+ /* Login Card Styling */
+ .login-card {
+   width: 100%;
+   max-width: 400px;
+   padding: 2rem;
+   border-radius: none !important;
+   box-shadow:  none !important;
+ }
+ 
+ /* Forgot password link */
+ .forgot-password {
+   display: flex;
+   justify-content: flex-end;
+   margin-bottom: 1rem;
+ }
+ 
+ .forgot-password a {
+   font-size: 0.9rem;
+   color: #1E2772 !important;
+   text-decoration: none;
+ }
+ 
+ /* Input Icons */
+ .input-icon {
+   color: #fff !important;
+   background-color: #1E2772 !important;
+   font-size: 1.2rem !important;
+   padding: 10px !important;
+   margin-right: -10px !important;
+   border-radius: 30% !important;
+ }
+
+/* Buttons */
+.auth-button-1 {
+   font-weight: bold !important;
+   background-color: #1E2772 !important;
+   color: #fff !important;
+   border-color: #1E2772 !important;
+ }
+ 
+ /* Hover Effect */
+ .auth-button-1:hover {
+   background-color: #fff !important;
+   color: #1E2772 !important;
+   border-color: #1E2772 !important;
+   font-weight: bold !important;
+ }
+
+
+ .auth-button-2 {
+   background-color: #fff !important;
+   color: #1E2772 !important;
+   border-color: #1E2772 !important;
+   font-weight: bold !important;
+ }
+
+ .auth-button-2:hover {
+   font-weight: bold !important;
+   background-color: #1E2772 !important;
+   color: #fff !important;
+   border-color: #1E2772 !important;
+ }
+ 
+
+ 
+ /* Mobile Responsive */
+ @media (max-width: 768px) {
+   .login-container {
+     flex-direction: column;
+   }
+ 
+   .login-bg {
+     display: none;
+   }
+ 
+   .login-form-container {
+     width: 100%;
+     padding: 20px;
+   }
+ 
+   .login-card {
+     width: 100%;
+     max-width: 90%;
+   }
+ }
+ 
