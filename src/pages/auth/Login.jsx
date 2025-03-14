@@ -2,7 +2,6 @@ import React from "react";
 import { Form, Card } from "antd";
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser } from "../../redux/usersSlice";
 import { useNavigate } from "react-router-dom";
 import CustomInput from "../../components/user/CustomInput";
 import CustomButton from "../../components/user/CustomButton";

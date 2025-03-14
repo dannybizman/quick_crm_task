@@ -9,7 +9,7 @@ const CustomButton = ({ text, onClick, block, className, loading }) => (
     loading={loading}
     htmlType="submit" // Make sure it submits the form
   >
-    {text}
+ {loading ? "Logging you in..." : text}
   </Button>
 );
 

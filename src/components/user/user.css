@@ -2,12 +2,11 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
-  overflow: hidden;
   background: white;
   transition: width 0.3s ease-in-out;
 }
+
 
 /* Collapsed Sidebar */
 .sidebar.collapsed {
@@ -16,57 +15,63 @@
 
 /* Sidebar Content (Top Section) */
 .sidebar-content {
-  flex-grow: 1;
+  flex-grow: 1; /* Takes up available space */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  overflow-y: auto; /* Allows scrolling for long menus */
 }
+
+
 /* Logo container */
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  display: flex !important;
+  align-items: start !important;
+  justify-content: center !important;
+  padding: 10px !important;
+  transition: all 0.3s ease-in-out !important;
 }
-
-/* Small logo for collapsed state */
-.logo-icon {
-  width: 40px; /* Adjust size as needed */
-  height: auto;
+/* When collapsed, only small logo remains */
+.collapsed-logo {
+  width: 40px !important;
 }
-
 /* Full logo for expanded state */
 .sidebar-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Space between image and text */
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important; /* Space between image and text */
 }
 
+/* Small logo always visible */
 .logo-img {
-  width: 50px; /* Adjust size as needed */
+  width: 40px !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
-.logo-text {
-  font-size: 16px;
-  font-weight: bold;
+/* Full logo only when expanded */
+.expanded-logo {
+  width: 200px !important;
+  margin-top: 20px;
+  transition: opacity 0.3s ease-in-out !important;
 }
-.version {
-  font-size: 10px;
-  color: gray;
+
+/* Hide or show logos based on state */
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
 }
 
 /* Sidebar Menu */
 .menu-sty {
-  flex-grow: 1;
+  flex-grow: 1; /* Ensures it takes up available space */
   overflow-y: auto;
 }
 
 /* Bottom Section */
 .sidebar-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 10px;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding: 15px;
 }
 
 /* Upgrade to Pro Card */
@@ -76,11 +81,11 @@
   text-align: center;
   padding: 15px;
   color: white;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .pro-btn {
   background: white;
@@ -123,13 +128,8 @@
     width: 80px !important;
   }
 
-  .menu-sty {
-    text-align: center;
-  }
-
-  .menu-sty .ant-menu-item {
-    display: flex;
-    justify-content: center;
+  .sidebar-content {
+    overflow: hidden;
   }
 
   .sidebar-bottom {
@@ -141,7 +141,6 @@
     display: none;
   }
 }
-
 
 /* Dashboard Container */
 .dashboard-container {

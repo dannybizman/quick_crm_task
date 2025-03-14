@@ -10,8 +10,7 @@ import { fetchUserData } from "../../apicalls/users";
 const { Header, Content } = Layout;
 
 const Dashboard = () => {
-
-   const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     const accessToken = localStorage.getItem("accessToken"); // Get token from localStorage
@@ -22,7 +21,6 @@ const Dashboard = () => {
     }
   }, []);
 
-
   return (
     <Layout style={{ minHeight: "100vh" }}>
       {/* Sidebar */}
@@ -32,7 +30,7 @@ const Dashboard = () => {
       <Layout className="site-layout">
         <Header className="header">
           <span className="greeting-text">
-              {user ? `Hello ${user.firstName} 👋,` : "Hello 👋,"}
+            {user ? `Hello ${user.firstName} 👋,` : "Hello 👋,"}
           </span>
 
           <div className="search-container">
