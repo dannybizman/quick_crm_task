@@ -4,7 +4,7 @@ export const fetchUserData = async (accessToken) => {
   try {
     const response = await axios.get("https://dummyjson.com/auth/me", {
       headers: {
-        Authorization: `Bearer ${accessToken}`, // Pass JWT via Authorization header
+        Authorization: `Bearer ${accessToken}`, 
       },
     });
 
